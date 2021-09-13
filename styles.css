@@ -111,3 +111,10 @@ button:hover {
  .btn-goBack{
      margin: 2rem;
  }
+
+ .errorHere{
+     font-size: x-large;
+     margin: 2rem;
+     color: aliceblue;
+
+ }
