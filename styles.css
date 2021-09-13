@@ -97,12 +97,12 @@ button:hover {
      font-family: 'Press Start 2P', cursive;
  }
  .outputLossHere, .outputHighLoss{
-     color: red;
+     color: rgb(221, 75, 30);
      font-family: 'Frijole', cursive;
      font-size: x-large;
  }
 
- .profit, .loss, .highLoss, .errorHere{
+ .profit, .loss, .highLoss, .ErrorHere{
      padding: 1rem;
      margin: 1rem;
      font-size: larger;
@@ -112,9 +112,8 @@ button:hover {
      margin: 2rem;
  }
 
- .errorHere{
+ .ErrorHere{
      font-size: x-large;
      margin: 2rem;
-     color: aliceblue;
-
+     color: orangered;
  }
