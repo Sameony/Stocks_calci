@@ -50,9 +50,7 @@ img{
     max-width: 90vw;
     margin: 0 1rem 4rem 0;
 }
-.loader{
-    width: 80vw;
-}
+
 button{
     background: #E6F63D;
     background-image: -webkit-linear-gradient(top, #E6F63D, #D0A91E);
@@ -94,7 +92,6 @@ button:hover {
 
  .outputProfitHere{
      color: greenyellow;
-     font-family: 'Press Start 2P', cursive;
  }
  .outputLossHere, .outputHighLoss{
      color: rgb(221, 75, 30);
