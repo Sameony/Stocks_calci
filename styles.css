@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    color: wheat;
+}
+
+.heading{
+    padding: 1rem;
+    font-size:4rem;
+    margin: 1rem auto;
+    max-width: 90%;
+}
+
+label{
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+#initPrice, #curPrice, #stonks{
+    padding: 0.7rem;
+    margin: 1rem auto;
+}
