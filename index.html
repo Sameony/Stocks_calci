@@ -10,24 +10,30 @@
 </head>
 
 <body>
-    <h1 class="heading">There you go. Stonk time!</h1>
-    <label for="initPrice">Enter the initial price of stocks:
+    <section class="input">
+        <h1 class="heading">There you go. Stonk time!</h1>
+        <label for="initPrice">Enter the initial price of stocks:
+            <br />
+            <input id="initPrice" type="text">
+        </label>
+
         <br />
-        <input id="initPrice" type="text">
-    </label>
+        <label for="stonks">Enter The Amount of stocks you bought:<br />
+            <input id="stonks" type="text">
+        </label>
 
-    <br />
-    <label for="stonks">Enter The Amount of stocks you bought:<br />
-        <input id="stonks" type="text">
-    </label>
+        <br />
+        <label for="curPrice">Enter the current price of stocks <br />
+            <input id="curPrice" type="text">
+        </label>
 
-    <br />
-    <label for="curPrice">Enter the current price of stocks <br />
-        <input id="curPrice" type="text">
-    </label>
-
-    <br />
-    <button class="btn-check">Check</button>
+        <br />
+        <button class="btn-check">Check</button>
+    </section>
+    <img src="/media/OldfashionedCautiousGreathornedowl-size_restricted.gif" class="loader">
+    <img src="/media/stonks-meme.gif" class="profit_gif">
+    <img src="/media/not-stonks-profit-down.gif" alt="Not stonks" class="loss_gif">
+    <img src="/media/d0f.png" alt="Too much loss" class="Very_high_loss_png">
     <div class="outputHere"></div>
 
     <script src="/index.js"></script>
