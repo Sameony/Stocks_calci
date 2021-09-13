@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cinzel:wght@900&family=Creepster&family=Frijole&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+/* font-family: 'Bungee Shade', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Creepster', cursive;
+font-family: 'Frijole', cursive;
+font-family: 'Press Start 2P', cursive; 
+font-family: 'Vast Shadow', cursive;*/
+
 body{
     text-align: center;
     margin: 0;
     background-color: black;
     color: wheat;
     font-size: large;
+    font-family: 'Cinzel', serif;
 }
 a{
     text-decoration: none;
@@ -11,9 +21,10 @@ a{
 }
 .heading{
     padding: 1rem;
-    font-size:4rem;
+    font-size:3rem;
     margin: 1rem auto;
     max-width: 90%;
+    font-family: 'Vast Shadow', cursive;
 }
 .outputHere{
     color:wheat;
@@ -33,13 +44,14 @@ label{
 img{
     max-width: 100vw;
     margin: auto;
+    margin-bottom: 1rem;
 }
 .Very_high_loss_png{
-    width: 100vw;
+    max-width: 90vw;
+    margin: 0 1rem 4rem 0;
 }
 .loader{
-    margin-top: 14rem;
-    width: 100vw;
+    width: 80vw;
 }
 button{
     background: #E6F63D;
@@ -82,7 +94,20 @@ button:hover {
 
  .outputProfitHere{
      color: greenyellow;
+     font-family: 'Press Start 2P', cursive;
  }
  .outputLossHere, .outputHighLoss{
      color: red;
+     font-family: 'Frijole', cursive;
+     font-size: x-large;
+ }
+
+ .profit, .loss, .highLoss, .errorHere{
+     padding: 1rem;
+     margin: 1rem;
+     font-size: larger;
+ }
+
+ .btn-goBack{
+     margin: 2rem;
  }
