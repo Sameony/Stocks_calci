@@ -3,13 +3,15 @@ const stonks = document.querySelector("#stonks");
 const curPrice = document.querySelector("#curPrice");
 const btn_check = document.querySelector(".btn-check");
 const btn_goBack = document.querySelector(".btn-goBack");
-var outputHere = document.querySelector(".outputHere");
+var outputProfitHere = document.querySelector(".outputProfitHere");
+var outputLossHere = document.querySelector(".outputLossHere");
+var outputHighLoss = document.querySelector(".outputHighLoss");
 const loader = document.querySelector(".loader");
 const input_here = document.querySelector(".input");
 var profit_sec = document.querySelector(".profit");
 var loss_sec = document.querySelector(".loss");
 var high_sec = document.querySelector(".highLoss");
-
+var ErrorHere = document.querySelector(".ErrorHere");
 
 
 loader.style.display = "none";
@@ -19,7 +21,6 @@ profit_sec.style.display = "none";
 
 btn_check.addEventListener("click", function gifTime() {
     loader.style.display = "block";
-    outputHere.innerText = "";
     input_here.style.display = "none";
     setTimeout(function () {
         profit_or_loss()
@@ -27,6 +28,7 @@ btn_check.addEventListener("click", function gifTime() {
 });
 
 function profit_or_loss() {
+    ErrorHere.innerText="";
     loader.style.display = "none";
     if (isNaN(curPrice.value) || isNaN(stonks.value) || isNaN(init.value))
         errorHandler("Please enter numerical values only!");
@@ -46,19 +48,18 @@ function profit_or_loss() {
 }
 
 function gibOutput(differ, percent, profit) {
-    outputHere.style.display="block";
     if (profit) {
         profit_sec.style.display = "block";
-        outputHere.innerText = ("Profit of " + differ + " and the percentage of profit is " + percent+"!!!");
+        outputProfitHere.innerText = ("Profit of " + differ + " and the percentage of profit is " + percent+"!!!");
     } else {
          if (percent < 50) {
             loss_sec.style.display = "block";
-            outputHere.innerText = ("loss of " + differ + " and the percentage of loss is " + percent+"!!!");
+            outputLossHere.innerText = ("loss of " + differ + " and the percentage of loss is " + percent+"!!!");
        
 
         } else {
             high_sec.style.display = "block";
-            outputHere.innerText = ("Oh NO! Huge Loss of " + differ + " and the percentage of loss is " + percent+"!!!");
+            outputHighLoss.innerText = ("Oh NO! Huge Loss of " + differ + " and the percentage of loss is " + percent+"!!!");
         }
 
     }
@@ -66,5 +67,5 @@ function gibOutput(differ, percent, profit) {
 
 function errorHandler(msg){
     input_here.style.display = "block";
-    outputHere.innerText=(msg);
+    ErrorHere.innerText=(msg);
 }

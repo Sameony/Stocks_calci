@@ -79,3 +79,10 @@ button:hover {
     border-radius: 20px;
     text-decoration: none;
  }
+
+ .outputProfitHere{
+     color: greenyellow;
+ }
+ .outputLossHere, .outputHighLoss{
+     color: red;
+ }
