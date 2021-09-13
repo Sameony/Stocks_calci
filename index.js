@@ -51,11 +51,11 @@ function profit_or_loss() {
 function gibOutput(differ, percent, profit) {
     if (profit) {
         profit_sec.style.display = "block";
-        outputProfitHere.innerText = ("Profit of " + differ + " and the percentage of profit is " + percent+"%!!!");
+        outputProfitHere.innerText = ("WOHOOO! You Gained a Profit of " + differ + "!!! The percentage of profit is " + percent+"%!!!");
     } else {
          if (percent < 50) {
             loss_sec.style.display = "block";
-            outputLossHere.innerText = ("loss of " + differ + " and the percentage of loss is " + percent+"%!");
+            outputLossHere.innerText = ("Ack! You had a Loss of " + differ + " and the percentage of loss is " + percent+"%!");
        
 
         } else {
