@@ -20,6 +20,7 @@ loss_sec.style.display = "none";
 profit_sec.style.display = "none";
 
 btn_check.addEventListener("click", function gifTime() {
+    ErrorHere.innerText="";
     loader.style.display = "block";
     input_here.style.display = "none";
     setTimeout(function () {
@@ -28,7 +29,7 @@ btn_check.addEventListener("click", function gifTime() {
 });
 
 function profit_or_loss() {
-    ErrorHere.innerText="";
+    
     loader.style.display = "none";
     if (isNaN(curPrice.value) || isNaN(stonks.value) || isNaN(init.value))
         errorHandler("Please enter numerical values only!");
@@ -50,16 +51,16 @@ function profit_or_loss() {
 function gibOutput(differ, percent, profit) {
     if (profit) {
         profit_sec.style.display = "block";
-        outputProfitHere.innerText = ("Profit of " + differ + " and the percentage of profit is " + percent+"!!!");
+        outputProfitHere.innerText = ("Profit of " + differ + " and the percentage of profit is " + percent+"%!!!");
     } else {
          if (percent < 50) {
             loss_sec.style.display = "block";
-            outputLossHere.innerText = ("loss of " + differ + " and the percentage of loss is " + percent+"!!!");
+            outputLossHere.innerText = ("loss of " + differ + " and the percentage of loss is " + percent+"%!");
        
 
         } else {
             high_sec.style.display = "block";
-            outputHighLoss.innerText = ("Oh NO! Huge Loss of " + differ + " and the percentage of loss is " + percent+"!!!");
+            outputHighLoss.innerText = ("Oh NO! Huge Loss of " + differ + " and the percentage of loss is " + percent+"%!!!");
         }
 
     }
