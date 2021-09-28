@@ -35,6 +35,10 @@ function profit_or_loss() {
         errorHandler("Please enter numerical values only!");
     else if(curPrice.value==="" || stonks.value === "" || init.value==="")
         errorHandler("Dont leave the blocks empty!");
+    else if(curPrice.value<0 || stonks.value <0 || init.value<0)
+    {
+        errorHandler("Enter a positive value! How can one do negative stocks...?")
+    }
     else {
         var sellingPrice = curPrice.value * stonks.value;
         var costPrice = init.value * stonks.value;
